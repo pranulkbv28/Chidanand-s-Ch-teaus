@@ -1,5 +1,4 @@
 body{
-  background-color: red;
     margin: 0;
     scroll-behavior: smooth;
     /* width: 100vw; */
@@ -415,6 +414,6 @@ nav{
         transition: 0.3s ease;
       }
       footer{
-        margin-bottom: 140px;
+        margin-bottom: 120px;
       }
 }
