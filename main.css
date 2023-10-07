@@ -1,0 +1,416 @@
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+    /* width: 100vw; */
+    font-family: 'Akaya Kanadaka', cursive;
+    font-family: 'Bacasime Antique', serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    width: 100%;
+    background-color: #f4ebde93;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 14px 0 0; */
+    font-size: 26px;
+}
+.w-75{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.img-logo{
+    width: 90px;
+    aspect-ratio: 1/1;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.menu-tags{
+    padding: 5px 10px;
+    transition: 0.2s ease;
+}
+.menu-tags:hover{
+    background-color: #d8bf9baa;
+}
+
+.owner-deets{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 14px;
+}
+.owner-deets img{
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.header{
+    margin: 15px;
+    font-size: 36px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 45%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides img{
+    width: 100%;
+    height: 300px;
+    object-fit: scale-down;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* Caption text */
+  .text {
+    /* display: flex;
+    justify-content: center; */
+    /* color: #f2f2f2; */
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+    /* width: 100%; */
+    text-align: center;
+  }
+  .text span{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.405);
+    padding: 8px 12px;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    /* color: #f2f2f2; */
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 0;
+    left: 9.75%;
+    top: 0;
+  }
+
+  .numbertext span{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.405);
+    padding: 8px 12px;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  #about{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    gap: 24px;
+  }
+  .desc-title{
+    /* transform: rotate(-90deg); */
+    /* text-orientation: sideways; */
+    writing-mode: vertical-lr;
+    transform:rotate(180deg);
+    /* white-space: nowrap; */
+    /* text-align: right; */
+    display: flex;
+    justify-content: center;
+  }
+  .desc>p{
+    line-height: 28px;
+  }
+  .desc>p>span{
+    background-color: rgba(246, 207, 154, 0.419);
+    color: black;
+    padding: 3px 6px;
+    text-decoration: underline;
+  }
+  #details{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    gap: 24px;
+  }
+  .desc-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .amenities{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 50px;
+  }
+  .amenities svg{
+    width: 30px;
+    height: 24px;
+  }
+  .amenities span{
+    font-size: 12px;
+  }
+  #gallery h1{
+    text-align: center;
+    font-size: 28px;
+  }
+  #gallery hr{
+    /* border-color: gray; */
+    width: 85%;
+  }
+  .area-gallery-head{
+    text-align: center;
+  }
+
+  .area-gallery-flex{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .area-gallery-flex img{
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    transition: 0.3s ease;
+  }
+  .area-gallery-flex img:hover{
+    transform: scale(1.1);
+  }
+  #location{
+    text-align: center;
+  }
+  #location p{
+    font-size: 28px;
+  }
+  #location a{
+    text-decoration: underline;
+  }
+  #who-am-i{
+    width: 85%;
+    margin: 24px auto;
+  }
+  .card-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .card-header img{
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
+  .card-header-text h2{
+    margin: 0;
+  }
+  .card-header-text p{
+    margin: 0;
+  }
+  .card-body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 250px;
+    margin: 20px 0;
+  }
+  .special div{
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  .special div:hover{
+    background-color: black;
+    color: white;
+  }
+  .pricing{
+    /* margin-top: 60px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f4ebde93;
+    color: black;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    /* margin-bottom: 100px; */
+  }
+  .pricing>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-left: 24px;
+  }
+  .cost{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.66);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+  }
+  .cost span:nth-child(1){
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .cost span:nth-child(2){
+    color: rgb(255, 255, 255);
+  }
+  .for-booking button{
+    cursor: pointer;
+    font-size: 28px;
+    border: none;
+    background-color: rgb(216, 0, 54);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 14px;
+    transition: 0.3s ease;
+  }
+  .for-booking button:hover{
+    transform: scale(1.1);
+  }
+  footer{
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+
+@media screen and (max-width: 688px) {
+    nav{
+        width: 100%;
+        font-size: 18px;
+        padding: 0;
+        /* flex-wrap: wrap; */
+    }
+    .header{
+        font-size: 24px;
+    }
+    .header h1{
+        margin-bottom: 0;
+    }
+    .logo{
+        width: 35%;
+    }
+    .img-logo{
+        width: 60px;
+        aspect-ratio: 1/1;
+    }
+    .menu{
+        display: none;
+    }
+    .owner-deets span{
+        font-size: 16px;
+    }
+    .owner-deets img{
+        width: 40px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+    }
+    .prev:hover, .next:hover {
+        background-color: unset;
+        color: unset;
+      }
+      .numbertext {
+        display: none;
+      }
+      .area-gallery-flex{
+        gap: 4px;
+      }
+      .card-body{
+        gap: 20px;
+      }
+      .pricing>div:nth-child(1){
+        gap: 10px;
+        padding-left: 14px;
+      }
+      .for-booking{
+        padding-right: 14px;
+      }
+      .for-booking button{
+        cursor: pointer;
+        font-size: 12px;
+        border: none;
+        background-color: rgb(216, 0, 54);
+        color: white;
+        padding: 4px 8px;
+        border-radius: 14px;
+        transition: 0.3s ease;
+      }
+}
