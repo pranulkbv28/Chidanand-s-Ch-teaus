@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Bacasime+Antique&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="booking.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chidanand's Châteaus Booking</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Please fill out the required information</h1>
+            <p>Labels with <span class="red">*</span> are important</p>
+            <p><span class="red">*</span>Disclaimer, filling this out send the information to the owner, please wait for the response from our team. We will be getting back to you as soon. Happy Booking!!<span class="red">*</span></p>
+        </div>
+        <div class="form-body">
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSd31eHmMknRU3JAfcar4fEvYuTqldH0C0ceBHwH3KBYeqwNiA/formResponse">
+                <div class="form-details">
+                    <div>
+                        <label for="name">Enter Your Name<span class="red">*</span></label><br>
+                        <input name="entry.1815025348" id="name" type="text" required>
+                    </div>
+                    <div>
+                        <label for="email">Enter Your Email<span class="red">*</span></label><br>
+                        <input name="entry.2064492682" id="email" type="email" required>
+                    </div>
+                    <div>
+                        <label for="tel">Enter Your Number<span class="red">*</span></label><br>
+                        <input name="entry.1839906321" id="tel" type="tel" required>
+                    </div>
+                    <div>
+                        <label for="checkInDate">Enter Your Check-In Date<span class="red">*</span></label><br>
+                        <input name="entry.979799773" id="checkInDate" type="date" required>
+                    </div>
+                    <div>
+                        <label for="checkOutDate">Enter Your Check-Out Date<span class="red">*</span></label><br>
+                        <input onchange="renderDate()" name="entry.449263007" id="checkOutDate" type="date" required>
+                    </div>
+                    <div>
+                        <label for="message">Leave a message for us (optional)</label><br>
+                        <textarea name="entry.1724500458" id="message" cols="40" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="form-submit">
+                    <input class="submit-btn" type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="booking.js"></script>
+</body>
+</html>
