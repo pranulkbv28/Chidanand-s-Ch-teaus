@@ -63,3 +63,14 @@ body{
     background-color: black;
     color: white;
 }
+
+@media screen and (max-width: 688px) {
+    .form-body{
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .form-details>div textarea{
+        width: 80%;
+     }
+}

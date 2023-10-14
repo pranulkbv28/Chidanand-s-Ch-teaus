@@ -191,7 +191,7 @@ nav{
     justify-content: center;
   }
   .desc>p{
-    line-height: 28px;
+    line-height: 30px;
   }
   .desc>p>span{
     background-color: rgba(246, 207, 154, 0.419);
@@ -221,7 +221,7 @@ nav{
     height: 24px;
   }
   .amenities span{
-    font-size: 12px;
+    font-size: 16px;
   }
   #gallery h1{
     text-align: center;
